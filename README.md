@@ -7,13 +7,31 @@ _Steganography is practiced by those wishing to convey a secret message or code.
 
 _Forms of steganography have been used for centuries and include almost any technique for hiding a secret message in an otherwise harmless container. For example, using invisible ink to hide secret messages in otherwise inoffensive messages; hiding documents recorded on microdot -- which can be as small as 1 millimeter in diameter -- on or inside legitimate-seeming correspondence; and even by using multiplayer gaming environments to share information._
 
-_ In this project we are dealing with a special type of Steganography: Audio Steganograpy _
+_In this project we are dealing with a special type of Steganography: Audio Steganograpy_
 
 ## Audio Steganography
 
-We will be encrypting song of _.emb_ format with messages wich later on can be decrypted. Website is created for facilitating user-friendly-interface.
+We will be encrypting song of _.emb_ format with messages wich later on can be decrypted. Webpagee is created for facilitating user-friendly-interface.
 
-#### Website
-Website is created using:
+####  All about the webpage 
+Webpage is created using:
 1. html
 2. CSS
+3. javaScript
+Frameworks used:
+1. Bootstrap
+2. Bulma
+
+A total of 5 interconnected webpages are constructed.
+_homepage.html_ is the starting page, where the user is given option for encryption and decryption in his selected type ( audio/ image/text). Thereafter the user is directed to his desired option. There are two different pages for audio encryption and decryption.
+For encryption, user is directed to _audio_encrypt.html_ where he has to submit the song and message. After submiting the details, he is forwarded to _encrpy_success.html_ from where he can download his/her encrypted song.
+For decryption, user is directed to _audio_decrypt.html_ where he has to submit the song. After submiting the details, he is forwarded to _decrpy_success.html_ from where he can view his/her encrypted message.
+Beautification of there webpages is done through:
+_layout.html_
+_loader.html_
+_website.css_
+
+_templates_ folder contains all these pages. They are called using _ajax_ as per their requirement.  
+
+
+
