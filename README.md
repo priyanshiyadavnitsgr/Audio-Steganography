@@ -13,7 +13,7 @@ _In this project we are dealing with a special type of Steganography: Audio Steg
 
 We will be encrypting song of _.emb_ format with messages wich later on can be decrypted. Webpagee is created for facilitating user-friendly-interface.
 
-####  All about the webpage 
+####  All about the interface
 Webpage is created using:
 1. html
 2. CSS
@@ -27,11 +27,37 @@ _homepage.html_ is the starting page, where the user is given option for encrypt
 For encryption, user is directed to _audio_encrypt.html_ where he has to submit the song and message. After submiting the details, he is forwarded to _encrpy_success.html_ from where he can download his/her encrypted song.
 For decryption, user is directed to _audio_decrypt.html_ where he has to submit the song. After submiting the details, he is forwarded to _decrpy_success.html_ from where he can view his/her encrypted message.
 Beautification of there webpages is done through:
-_layout.html_
-_loader.html_
-_website.css_
+
+1. _layout.html_
+2. _loader.html_
+3. _website.css_
 
 _templates_ folder contains all these pages. They are called using _ajax_ as per their requirement.  
+
+
+#### Encryption
+
+_audio_encrpy.py_ contains the code for audio encryption.
+
+Algorithm used: LSB(Least Significant Bit)
+Library (for working with audio fie): wave
+Input: song an message
+Output: encrypted song
+
+Encryption is made by changing the least significant bit of the song by the message.
+
+#### Decryption
+
+_audio_encrpy.py_ contains the code for audio encryption.
+
+Algorithm used: LSB(Least Significant Bit)
+Library (for working with audio fie): wave
+Input: encrypted message
+Output: decrypted message
+
+#### Main controller
+All these different parts are connected and activated using _app.py_. It renders the desired template using _Flask_. 
+ 
 
 
 
