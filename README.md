@@ -39,10 +39,10 @@ _templates_ folder contains all these pages. They are called using _ajax_ as per
 
 _audio_encrpy.py_ contains the code for audio encryption.
 
-Algorithm used: LSB(Least Significant Bit)
-Library (for working with audio fie): wave
-Input: song an message
-Output: encrypted song
+1. Algorithm used: LSB(Least Significant Bit)
+2. Library (for working with audio fie): wave
+3. Input: song an message
+4. Output: encrypted song
 
 Encryption is made by changing the least significant bit of the song by the message.
 
@@ -50,10 +50,10 @@ Encryption is made by changing the least significant bit of the song by the mess
 
 _audio_encrpy.py_ contains the code for audio encryption.
 
-Algorithm used: LSB(Least Significant Bit)
-Library (for working with audio fie): wave
-Input: encrypted message
-Output: decrypted message
+1. Algorithm used: LSB(Least Significant Bit)
+2. Library (for working with audio fie): wave
+3. Input: encrypted message
+4. Output: decrypted message
 
 #### Main controller
 All these different parts are connected and activated using _app.py_. It renders the desired template using _Flask_. 
