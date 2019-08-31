@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+<style>
+    .brute-center{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+    }
+    
+    body{
+        background-image:url("https://www.demilked.com/magazine/wp-content/uploads/2015/05/landscape-form-visualization-nature-sound-waves-anna-marinenko-9.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .card-header{
+        color:navy;
+        font-size: 25px
+
+    }
+
+    .card-text,.h1{
+        color:rebeccapurple
+    }
+
+    button{
+        font-size: 24px
+            }
+</style>
+{% endblock %}
+
+{% block body %}   
+
+<section class="container mt-5 brute-center">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header">
+                    SUCESSFUL DECRYPTION OF AUDIO FILE
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" >The secret message: {{decoded_msg}}</h5>
+                    <p class="card-text" >The audio is of .wav type.</p>
+                </div>
+            </div>
+        </div>  
+    </div> 
+</section>
+    
+{% endblock %}
+
+

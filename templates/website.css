@@ -1,0 +1,41 @@
+#main_content{
+    
+    
+    margin:400 150 150 600;
+   
+   
+    
+    
+}
+
+h1{
+    color:peachpuff;
+    font-size: 50
+}
+
+span{
+    font-size: 20;
+    padding:10px;
+    background-color: aqua;
+    margin:15;
+
+
+
+}
+
+span{
+    margin:15px
+}
+
+.column{
+    float:left;
+    width:15%;
+
+}
+.row{
+    clear:both;
+}
+.background_image{
+    url="http://danielpa.nextmp.net/wp-content/uploads/danielpalacios_waves_pattern-1.jpg";
+
+}
