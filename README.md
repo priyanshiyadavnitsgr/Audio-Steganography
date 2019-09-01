@@ -11,7 +11,7 @@ _In this project we are dealing with a special type of Steganography: Audio Steg
 
 ## Audio Steganography
 
-We will be encrypting song of _.emb_ format with messages wich later on can be decrypted. Webpagee is created for facilitating user-friendly-interface.
+We will be encrypting song of _.emb_ format with messages wich later on can be decrypted. Webpage is created for facilitating user-friendly-interface.
 
 ####  All about the interface
 Webpage is created using:
